@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main2"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.jinhwan.myapplication.MainActivity">
+
+    <LinearLayout
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:background="#e4feff"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:padding="10dp"
+            android:gravity="center"
+            android:text="메뉴 이미지 변경 시간(초) "
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <EditText
+            android:padding="10dp"
+            android:background="#ffffff"
+
+            android:id="@+id/edit"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:onClick="onClick"
+            android:id="@+id/button"
+            android:text="처음으로"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <TextView
+        android:layout_marginTop="50dp"
+        android:gravity="center"
+        android:textSize="40dp"
+        android:text="오늘 뭐먹지?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+
+            android:maxWidth="200dp"
+            android:adjustViewBounds="true"
+            app:srcCompat="@mipmap/ic_launcher"
+            android:id="@+id/menu"
+            android:onClick="onClick"/>
+
+
+
+
+    <TextView
+        android:id="@+id/tvTime"
+
+        android:gravity="center_horizontal"
+        android:text="시작부터 0초"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>
